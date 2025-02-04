@@ -4,7 +4,7 @@ ChromaQuest is an engaging color recognition game that challenges players to tes
 
 ## 🎮 Live Demo
 
-[Play ChromaQuest](https://chromaquest-game.com)
+[Play ChromaQuest](https://chromaquest.netlify.app/)
 
 ## Screenshots
 
@@ -54,4 +54,4 @@ We welcome contributions! Here's how you can help:
 
 ## 📬 Contact
 
-Project Link: [https://github.com/yourusername/chromaquest](https://github.com/yourusername/chromaquest)
+Project Link: [https://github.com/Mutairu-Lawal/chromaQuest](https://github.com/Mutairu-Lawal/chromaQuest)

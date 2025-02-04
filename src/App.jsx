@@ -316,6 +316,7 @@ function App() {
           <div className="buttons" data-testid="colorOptions">
             {Object.keys(currentColor.options).map((option, index) => (
               <button
+                type="button"
                 className="btn"
                 data-testid="colorOption"
                 id={currentColor.options[option]}
