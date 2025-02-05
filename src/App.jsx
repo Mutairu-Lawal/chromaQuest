@@ -54,12 +54,15 @@ function App() {
   return (
     <>
       <div className="container">
-        <h1>Color Game</h1>
+        <h1>Chroma Quest</h1>
 
         <div className="score-container">
           <div className="score-board">
             <img src="trophy.webp" alt="trophy img" width={30} height={30} />
-            <span id="score">{score}</span> points
+            <span id="score" data-testid="score">
+              {score}
+            </span>{' '}
+            points
           </div>
           <div className="page-number">
             <p>
@@ -82,17 +85,23 @@ function App() {
           <p>Click on the correct color</p>
 
           {guessResult === false && (
-            <p className={`${!guessResult && 'shake-lr'}`}>
+            <p
+              data-testid="gameStatus"
+              className={`${!guessResult && 'shake-lr'}`}
+            >
               Oops! try again ❌
             </p>
           )}
           {guessResult === true && (
-            <p className={`${guessResult && 'slide-in-fwd-center'}`}>
+            <p
+              data-testid="gameStatus"
+              className={`${guessResult && 'slide-in-fwd-center'}`}
+            >
               You got it right! 👍
             </p>
           )}
 
-          <div className="buttons" data-testid="colorOptions">
+          <div className="buttons">
             {Object.keys(currentColor.options).map((option, index) => (
               <div
                 type="button"
